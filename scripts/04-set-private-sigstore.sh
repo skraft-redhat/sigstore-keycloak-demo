@@ -17,7 +17,7 @@ rm -rf ~/.sigstore
 export TEST="foo"
 
 export TUF_URL=$(oc get tuf -o jsonpath='{.items[0].status.url}' -n tssc-tas)
-export OIDC_ISSUER_URL=https://$(oc get route keycloak -n tssc-keycloak | tail -n 1 | awk '{print $2}')/auth/realms/trusted-artifact-signer
+export OIDC_ISSUER_URL=https://$(oc get route keycloak -n tssc-keycloak | tail -n 1 | awk '{print $2}')/realms/trusted-artifact-signer
 export COSIGN_FULCIO_URL=$(oc get fulcio -o jsonpath='{.items[0].status.url}' -n tssc-tas)
 export COSIGN_REKOR_URL=$(oc get rekor -o jsonpath='{.items[0].status.url}' -n tssc-tas)
 export COSIGN_MIRROR=$TUF_URL
