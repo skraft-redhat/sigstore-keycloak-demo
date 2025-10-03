@@ -1,0 +1,8 @@
+#!/bin/bash
+
+podman login quay.io
+
+export IMAGE=quay.io/stephan_kraft/any_image:1.0
+skopeo delete docker://$IMAGE
+skopeo copy docker://quay.io/openshift-examples/simple-http-server:micro docker://$IMAGE 
+rm -rf ~/.sigstore

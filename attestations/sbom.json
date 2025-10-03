@@ -1,0 +1,33 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2025-10-03T09:21:37Z",
+    "dataLicense": "CC0-1.0",
+    "creators": [
+      "Organization: ExampleTech, Inc."
+    ]
+  },
+  "name": "WebApp-1.0.0-SBOM",
+  "documentNamespace": "http://spdx.org/spdxdocs/WebApp-1.0.0-a1b2c3d4",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-WebCore",
+      "name": "WebCore",
+      "versionInfo": "1.0.0",
+      "supplier": "Organization: ExampleTech, Inc."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Requests",
+      "name": "requests",
+      "versionInfo": "2.31.0",
+      "supplier": "Person: Kenneth Reitz"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Jinja2",
+      "name": "Jinja2",
+      "versionInfo": "3.1.2",
+      "supplier": "Organization: Pallets"
+    }
+  ]
+}

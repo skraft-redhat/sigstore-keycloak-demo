@@ -1,0 +1,26 @@
+{
+  "scanner": {
+    "uri": "https://github.com/aquasecurity/trivy",
+    "version": "0.50.2"
+  },
+  "scanStartedOn": "2025-10-02T10:15:00Z",
+  "scanFinishedOn": "2025-10-02T10:15:10Z",
+  "vulnerabilities": [
+    {
+      "id": "CVE-2024-1234",
+      "package": "openssl",
+      "version": "1.1.1u",
+      "severity": "HIGH",
+      "description": "Buffer overflow in OpenSSL when parsing X.509 certificates",
+      "fixedVersion": "1.1.1v"
+    },
+    {
+      "id": "CVE-2023-9876",
+      "package": "glibc",
+      "version": "2.31",
+      "severity": "CRITICAL",
+      "description": "Use-after-free in glibc iconv conversion",
+      "fixedVersion": "2.32"
+    }
+  ]
+}
