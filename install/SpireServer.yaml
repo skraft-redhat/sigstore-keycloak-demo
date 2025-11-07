@@ -1,0 +1,22 @@
+apiVersion: operator.openshift.io/v1alpha1
+kind: SpireServer
+metadata:
+  name: cluster
+spec:
+  trustDomain: $TRUST_DOMAIN 
+  clusterName: $TRUST_DOMAIN 
+  caSubject:
+    commonName: example.org 
+    country: "US" 
+    organization: "RH" 
+  persistence:
+    type: pvc 
+    size: "5Gi" 
+    accessMode: ReadWriteOnce 
+  datastore:
+    databaseType: sqlite3
+    connectionString: "/run/spire/data/datastore.sqlite3"
+    maxOpenConns: 100 
+    maxIdleConns: 2 
+    connMaxLifetime: 3600 
+  jwtIssuer: https://openid-discovery.$TRUST_DOMAIN 

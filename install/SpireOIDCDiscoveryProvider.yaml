@@ -1,0 +1,8 @@
+apiVersion: operator.openshift.io/v1alpha1
+kind: SpireOIDCDiscoveryProvider
+metadata:
+  name: cluster
+spec:
+  trustDomain: $TRUST_DOMAIN
+  agentSocketName: 'spire-agent.sock' 
+  jwtIssuer: https://openid-discovery.$TRUST_DOMAIN
