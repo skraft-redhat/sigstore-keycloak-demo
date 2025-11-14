@@ -30,3 +30,5 @@ export SIGSTORE_REKOR_URL=$COSIGN_REKOR_URL
 export REKOR_REKOR_SERVER=$COSIGN_REKOR_URL
 
 cosign initialize
+
+cat .git/config
