@@ -1,0 +1,1 @@
+{"critical":{"identity":{"docker-reference":"quay.io/stephan_kraft/any_image"},"image":{"docker-manifest-digest":"sha256:6640d2672dea93beeeb263f6a3eab93a0bf871f9792b458499ed83dc0b04ee6f"},"type":"cosign container image signature"},"optional":null}
