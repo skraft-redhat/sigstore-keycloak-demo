@@ -5,3 +5,4 @@ Adding something
 >>>>>>> 679e802 (blank commit change)
 Adding something
 Adding something
+Adding something
