@@ -1,1 +1,6 @@
 Adding something
+<<<<<<< HEAD
+=======
+Adding something
+>>>>>>> 679e802 (blank commit change)
+Adding something
