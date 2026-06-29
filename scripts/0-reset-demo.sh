@@ -16,3 +16,8 @@ skopeo copy docker://quay.io/openshift-examples/simple-http-server:micro docker:
 
 export IMAGE=quay.io/stephan_kraft/any_image:1.0
 rm -rf ~/.sigstore
+git rm test.txt
+touch test.txt
+git add .
+git commit -am "Initializing"
+git push
